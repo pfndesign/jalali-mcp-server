@@ -1,0 +1,35 @@
+{
+  "name": "jalali-mcp-server",
+  "version": "1.0.0",
+  "description": "jalali date mcp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx @modelcontextprotocol/inspector node index.js",
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "install": "pip install mcpo uv",
+    "server": "uvx mcpo --host 0.0.0.0 --port 8000 -- node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "ai",
+    "jalali",
+    "farsi",
+    "persian",
+    "iran",
+    "date"
+  ],
+  "type": "module",
+  "author": "pfndesigen",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jalali-moment": "^3.3.11",
+    "js-search": "^2.0.1",
+    "moment": "^2.30.1",
+    "moment-hijri": "^3.0.0",
+    "zod": "^3.24.4"
+  }
+}
